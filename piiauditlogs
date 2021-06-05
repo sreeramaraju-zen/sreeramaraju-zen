@@ -1,0 +1,12 @@
+
+Auditlog source_display_name for different sourceTypes is being set here in extensions/cia.rb
+	- https://github.com/zendesk/zendesk/blob/main/lib/zendesk/extensions/cia.rb#L85
+
+audit_logs_controller.rb - serves auditlogs api 
+
+User Deletion
+	- When user is soft deleted
+		- user is_active set to false
+		- deletes all user_identetites related to this user
+	
+To Scrubbing PII data related to UserEmailIdentity will be hard as there is no way of reverse lookup the audit event to back to useri, as corresponding UserEmailIdentity has already been deleted.
