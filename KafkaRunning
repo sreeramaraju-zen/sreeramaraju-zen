@@ -1,0 +1,8 @@
+
+- Run zdi kafka restart in local
+- Run zdi escape restart in local
+
+- Make sure to create necessary aws sqs quese necessary
+
+- Run consumers on auditlogs service side
+

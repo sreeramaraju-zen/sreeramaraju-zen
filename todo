@@ -1,0 +1,10 @@
+
+- Process AccountSetting Kafka event
+	- Create entry in DB table
+
+- Process Deleted Users for a given URL and update and DB table
+
+
+- Update AuditLogs page with ActorID instead of ActorName if name is 'Permanently deleted user'
+
+

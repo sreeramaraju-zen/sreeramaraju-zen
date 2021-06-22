@@ -1,0 +1,18 @@
+PII Audit Logs
+==============
+
+- User Enables/Disables 'Automatically Delete PII' setting in Classic
+
+	- This will produce kafka event - ( Where is this code written inside classic )
+
+- Audit Logs Service will consume this event
+	- Consumer will persist record in Account_gdpr_status table and returns success
+
+- Scrubb Historical Account Users Command Line process
+	- Invoke response from next_url 
+	- Process Each Delete User 
+	- Update account_gdpr_status
+	- Update Success
+
+- Scrubb Email Identity of Deleted Users
+	- Pickup EmailIdentities whose Users are missing and scrub PII 
