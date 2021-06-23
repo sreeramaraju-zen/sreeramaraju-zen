@@ -1,0 +1,15 @@
+
+
+- zdi mysql reset
+
+- zdi classic -d restart
+
+- zdi classic arturo enable audit_logs_gdpr_enabled  - Needed to test Delete User
+
+- zdi classic arturo enable audit_logs_account_setting_events
+
+Create User Deletion request to AWS Queue
+- aws --profile default --region us-east-1 --endpoint-url=http://localhost:4576 sqs send-message --queue-url http://localhost:4576/000000000000/development-user-deletion-us-audit_logs-01-pod1 --message-body '{ "Message":  "{\"user_id\":10001,\"account_id\":1,\"account_subdomain\":\"support\",\"action\":\"request_deletion\",\"application\":\"all\",\"executer_id\":10001,\"pod\":1}"}' 
+
+
+

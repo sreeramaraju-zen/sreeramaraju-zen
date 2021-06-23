@@ -1,10 +1,42 @@
 
-- Process AccountSetting Kafka event
-	- Create entry in DB table
 
-- Process Deleted Users for a given URL and update and DB table
+- Create account_gdpr_status table  		- Done
+
+PR - 1
+- Write funcs to CRUD ops on this table		- 
+	- db.NewAccountGDPRProcess( ctx, accountID, true/false)
+		
+	- db.FindAccountGDPRStatus( ctx, accountID, status ) 
+
+	- db.UpdateAccountGDPRStatus( ctx, accountID, &AccountGDPRStatus{} )
 
 
-- Update AuditLogs page with ActorID instead of ActorName if name is 'Permanently deleted user'
+- Write Unit test for these funcs
 
 
+
+
+PR - 2
+- Write filter func to read Permanently deleted Users
+
+
+PR - 3
+- Refactor RedactUserData as a separate package
+
+
+PR - 4
+- Write Cobra Command for GDPR Process
+	- Start the process
+	- GDPRStatus = select * from account_gdpr_status where accountID= and status == in-progress order by created_dt limit 1
+	- if GDPRStatus.Pending
+		- GetPermanently Deleted Users from URL
+		- RedactPIIDataForDeletedUser(userID)
+	  	- Update accoutn_gdpr_status with next_url
+		- if next_url is empty update completed
+		
+PR - 5
+- Write Cobra Command to Read EmailIdentities with missing Sources and Redact.
+
+		
+	
+	 
