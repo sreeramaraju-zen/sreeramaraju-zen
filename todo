@@ -4,27 +4,24 @@
 
 PR - 1
 - Write funcs to CRUD ops on this table		- 
-	- db.NewAccountGDPRProcess( ctx, accountID, true/false)
-		
-	- db.FindAccountGDPRStatus( ctx, accountID, status ) 
-
-	- db.UpdateAccountGDPRStatus( ctx, accountID, &AccountGDPRStatus{} )
-
+	- audits.NewGDPRStatus(ctx, db, accountID, true/false)
+	- audits.UpdateGDPRStatus( ctx, db, &AccountGDPRStatus{})
+	- audits.FindAccountByGDPRStatus( ctx, db, accountID, status)
 
 - Write Unit test for these funcs
+- Update AccountSettingsConsumer
 
 
-
-
-PR - 2
+PR - 2 - NOT REQUIRED
 - Write filter func to read Permanently deleted Users
 
 
-PR - 3
+PR - 3 - Should be easy refactor
 - Refactor RedactUserData as a separate package
 
 
-PR - 4
+PR - 4 - Check with Shane tomorrow morning
+
 - Write Cobra Command for GDPR Process
 	- Start the process
 	- GDPRStatus = select * from account_gdpr_status where accountID= and status == in-progress order by created_dt limit 1
