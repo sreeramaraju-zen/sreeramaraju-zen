@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+This is personal space. to collect and list out learnings and improvements
+
 <!--
 **sreeramaraju-zen/sreeramaraju-zen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
