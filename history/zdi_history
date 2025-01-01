@@ -1,0 +1,583 @@
+   31  zdi attachments -d restart --aws_sandbox
+   32  zdi attachments restart --aws_sandbox
+   60  zdi redis shell
+   61  zdi redis -v
+   62  zdi redis -h
+   63  zdi redis info
+  147  zdi doorman_scala stop
+  148  zdi doorman_scala restart
+  240  zdi world restrt
+  386  AWS_PROFILE=zendesk-ecr-images zdi malware-scanning-service pull
+  387  AWS_PROFILE=zendesk-ecr-images zdi -v malware-scanning-service pull
+  388  AWS_PROFILE=zendesk-ecr-images zdi malware-scanning-service pull -v
+  469  zdi malware-scanning-service bootstrap_aws
+  470  zdi malware-scanning-service update -v
+  471  zdi malware-scanning-service bootstrap_aws -v
+  528  zdi attachments restatr
+  529  zdi attachments bootstrap_aws
+  544  zdi pause
+  546  zdi world help
+  549  zdi attachments sto
+  618  zdi classic update -v
+  667  cd ~/.zdi/artifactory/
+  949  cat ~/.zdi/artifactory/coursiercreds
+ 1070  zdi world restart
+ 1071  zdi attachments logs
+ 1076  zdi attachments -d restart --remote-debug 
+ 1077  zdi attachments stop
+ 1078  zdi attachments -d restart --remote-debug 
+ 1110  zdi attachments logs
+ 1111  zdi attachments restart
+ 1112  zdi attachments logs
+ 1117  zdi attachments -d restart --remote-debug 
+ 1119  zdi attachments restart
+ 1121  zdi attachments logs
+ 1171  zdi attachments logs
+ 1187  zdi attachments logs
+ 1290  zdi onboard --only=ecr_login  
+ 1294  zdi onboard --only=ecr_login  
+ 1300  zdi onboard --only=ecr_login  
+ 1415  zdi attachments logs
+ 1424  zdi attachments update
+ 1425  zdi -v attachments update
+ 1426  zdi attachments update -v
+ 1427  zdi -v attachments update
+ 1429  zdi attachments logs
+ 1463  zdi attachments logs
+ 1572  zdi artifactory-env setup
+ 1579  zdi artifactory-env setup
+ 1580  vim ~/.zdi/artifactory/coursiercreds
+ 1581  zdi artifactory-env setup
+ 1583  zdi artifactory-env setup
+ 1596  cd .zdi
+ 1602  cd .zdi/profile.d/
+ 1605  vim ~/.zdi/artifactory/coursiercreds
+ 1610  vim ~/.zdi/artifactory/coursiercreds
+ 1612  vim ~/.zdi/artifactory/coursiercreds
+ 1614  vim ~/.zdi/profile.d/artifactory.sh.bkp
+ 1615  zdi artifactory-env setup
+ 1618  vim ~/.zdi/profile.d/artifactory.sh.bkp
+ 1619  cd ~/.zdi/profile.d
+ 1624  vim ~/.zdi/artifactory/coursiercreds
+ 1630  cd ~/.zdi/profile.d
+ 1641  zdi attachments update
+ 1675  vim ~/.zdi/artifactory/coursiercreds
+ 1682  zdi artifactory-env setup
+ 1684  zdi artifactory-env setup
+ 1686  cd Code/zendesk/zdi
+ 1688  zdi artifactory-env setup
+ 1689  mv ~/.zdi/profile.d/artifactory.sh.bkp ~/.zdi/profile.d/artifactory.sh
+ 1690  zdi artifactory-env setup
+ 1691  vim ~/.zdi/profile.d/artifactory.sh
+ 1693  zdi artifactory-env setup
+ 1697  mv ~/.zdi/profile.d/artifactory.sh ~/.zdi/profile.d/artifactory.sh.bkp
+ 1717  cd Code/zendesk/zdi
+ 1739  zdi onboard --only=artifactory
+ 1804  zdi attachments logs
+ 1951  cd Code/zendesk/zdi
+ 1959  zdi update -v
+ 1963  zdi onboard --only=ecr_login  
+ 1964  zdi update -v
+ 1965  AWS_PROFILE=zendesk-ecr-images zdi update -v
+ 1967  zdi update -v
+ 1969  zdi cleanup
+ 1970  zdi update -v
+ 1971  zdi datadog_agent pull
+ 1973  zdi datadog_agent pull
+ 1975  zdi datadog_agent pull
+ 1977  zdi datadog_agent pull
+ 1978  zdi onboard --only=ecr_login  
+ 1979  zdi datadog_agent pull
+ 1980  zdi datadog_agent pull -v
+ 1982  zdi classic status
+ 1983  zdi classic logs
+ 2015  zdi world restart
+ 2018  zdi attachments logs
+ 2028  zdi update
+ 2030  cd zdi
+ 2031  zdi update
+ 2038  zdi update
+ 2039  zdi onboard --only=ecr_login  
+ 2040  zdi update
+ 2041  zdi attachments update
+ 2042  zdi zendesk_maxwell update
+ 2043  zdi world update
+ 2044  zdi update
+ 2046  cd zdi
+ 2048  zdi update
+ 2049  zdi mysql update
+ 2050  zdi mysql status
+ 2051  zdi update
+ 2052  zdi update -v
+ 2054  zdi attachments logs
+ 2060  zdi attachments update
+ 2061  zdi attachments bootstrap
+ 2062  zdi attachments -d shell
+ 2063  cd ../zdi/bin/
+ 2065  SKIP_DB_SCHEMA_UPDATE=true zdi attachments bootstrap
+ 2465  SKIP_DB_SCHEMA_UPDATE=true zdi attachments bootstrap
+ 2467  zdi world restar
+ 2468  zdi world restart
+ 2470  zdi attachments -d restart
+ 2472  zdi attachments -d restart
+ 2474  cd zdi
+ 2485  zdi attachments -d restart
+ 2487  cd ../zdi
+ 2498  zdi attachments -d restart
+ 2504  git commit -m 'use zdi localstack endpoint'
+ 2589  cd zdi
+ 2597  zdi attachments -d restart
+ 2599  zdi attachments -d restart
+ 2650  zdi attachments status
+ 2651  zdi world stop
+ 2805  cd zdi
+ 2806  zdi update
+ 2812  zdi update
+ 2814  zdi world restart
+ 2901  zdi attachments update
+ 3533  zdi world restart
+ 3564  zdi classic update
+ 3565  zdi classic console
+ 3568  zdi classic logs
+ 3570  zdi classic create_attachments_bucket
+ 3571  zdi classic logs
+ 3578  zdi attachments logs
+ 3742  zdi onboard --only=ecr_login  
+ 4201  zdi attachments -d shell
+ 4246  cd zdi/
+ 4248  zdi update
+ 4249  zdi cleanup
+ 4250  zdi update
+ 4252  zdi world restart
+ 4509  zdi attachments -d shell
+ 4510  zdi mysql
+ 4511  zdi mysql console
+ 4712  cd zdi
+ 4714  zdi update
+ 4717  zdi world restart
+ 4719  zdi attachments logs
+ 4721  zdi attachments logs --tail 100
+ 4729  zdi update
+ 4731  zdi world restart
+ 4735  zdi mysql status
+ 4736  zdi mysql update
+ 4737  zdi mysql status
+ 4738  zdi mysql logs
+ 4739  zdi mysql restart
+ 4740  zdi mysql status
+ 4741  zdi mysql update
+ 4742  zdi mysql logs
+ 4744  zdi mysql restart && zdi mysql logs
+ 4746  zdi mysql console
+ 4747  zdi mysql restart
+ 4748  zdi mysql console
+ 4749  zdi mysql reset
+ 4750  zdi mysql update
+ 4751  zdi mysql console
+ 4753  cd zdi
+ 4764  zdi mysql start
+ 4766  zdi mysql start
+ 4767  zdi mysql console
+ 4768  zdi mysql start
+ 4769  zdi mysql shell
+ 4772  zdi mysql update
+ 4774  zdi mysql update
+ 4775  zdi mysql logs
+ 4776  zdi mysql console
+ 4779  zdi update
+ 4782  zdi help
+ 4783  zdi mysql update
+ 4784  zdi mysql console
+ 4785  zdi mysql console -d
+ 4786  zdi mysql console -v
+ 4787  zdi onboard --only=ecr_login  
+ 4788  zdi mysql update
+ 4789  zdi mysql console -v
+ 4794  cd zdi/
+ 4796  zdi mysql update
+ 4797  zdi mysql console
+ 4798  zdi mysql console -v
+ 4803  zdi mysql console
+ 4804  zdi mysql update
+ 4805  zdi mysql console
+ 4806  zdi consul update
+ 4807  zdi dnsmasq update
+ 4808  zdi mysql update
+ 4809  zdi mysql console
+ 4817  zdi classic shell
+ 4818  zdi attachments console
+ 4819  zdi attachments -d shell
+ 4820  zdi classic -d shell
+ 4822  zdi mysql update
+ 4823  zdi mysql console
+ 4824  zdi mysql stats
+ 4825  zdi mysql status
+ 4826  zdi mysql start
+ 4830  zdi update mysql
+ 4831  zdi mysql update
+ 4832  zdi update
+ 4834  zdi mysql update
+ 4835  zdi mysql console
+ 4836  zdi consul reset
+ 4837  zdi consul 
+ 4838  zdi consul -h
+ 4839  zdi consul bootstrap
+ 4840  zdi mysql -h
+ 4841  zdi mysql reset
+ 4844  zdi mysql console -v
+ 4850  zdi mysql update
+ 4851  zdi mysql console
+ 4856  zdi mysql update
+ 4857  zdi mysql console
+ 4860  zdi mysql update
+ 4861  zdi mysql console
+ 4863  zdi mysql update
+ 4864  zdi mysql console
+ 4866  zdi mysql update
+ 4867  zdi mysql console
+ 4869  zdi mysql update
+ 4870  zdi mysql console
+ 4872  zdi mysql update
+ 4873  zdi mysql console
+ 4878  zdi mysql update
+ 4879  zdi mysql console
+ 4884  zdi mysql update
+ 4885  zdi mysql console
+ 4887  zdi mysql update
+ 4888  zdi mysql console
+ 4890  zdi mysql update
+ 4891  zdi mysql console
+ 4893  zdi mysql console
+ 4896  zdi mysql update
+ 4897  zdi mysql console
+ 4899  zdi mysql update
+ 4900  zdi mysql console
+ 4901  zdi mysql_8 update
+ 4902  zdi mysql stop
+ 4903  zdi mysql_8 update
+ 4904  zdi mysql_8 console
+ 4907  zdi world restart
+ 4909  zdi bootstrap
+ 4910  zdi world stop
+ 4911  zdi mysql console
+ 4913  zdi bootstrap
+ 4914  zdi clean
+ 4916  zdi update
+ 4917  zdi mysql console
+ 4918  zdi consul
+ 4919  zdi consul -h
+ 4920  zdi consul shell
+ 4921  zdi dnsmasq
+ 4922  zdi dnsmasq -h
+ 4923  zdi dnsmasq shell
+ 4928  zdi nuke
+ 4929  zdi bootstrap
+ 4933  zdi dynamodb bootstrap
+ 4944  zdi terraform update
+ 4945  zdi terraform -h
+ 4946  zdi terraform bootstrap
+ 4947  zdi terraform apply
+ 4948  zdi dynamodb bootstrap
+ 4955  zdi dynamodb bootstrap
+ 4956  zdi world restart
+ 4958  zdi attachments logs
+ 4959  zdi attachments logs --tail 50
+ 4960  zdi attachments bootstrap
+ 4961  zdi world restart
+ 4962  zdi attachments status
+ 4967  zdi dynamodb bootstrap
+ 4968  zdi classic logs
+ 4969  zdi mysql console
+ 4972  zdi mysql console
+ 4989  zdi update
+ 4991  zdi world restart
+ 5051  zdi onboard --only=ecr_login  
+ 5074  zdi onboard --only=ecr_login  
+ 5193  cd zdi
+ 5195  zdi update
+ 5198  cd zdi
+ 5200  zdi update
+ 5207  zdi update
+ 5209  zdi malware-scanning-service logs
+ 5210  zdi malware-scanning-service logs --tail 100
+ 5211  zdi malware-scanning-service bootstrap
+ 5212  zdi malware-scanning-service logs
+ 5301  cd zdi/
+ 5303  zdi world update
+ 5304  zdi update
+ 5306  zdi world restart
+ 5308  zdi entitlements logs
+ 5309  zdi entitlements logs --tail 100
+ 5310  zdi entitlements restart
+ 5311  zdi entitlements logs --tail 100
+ 5313  zdi entitlements_consumers logs
+ 5314  zdi localstack bootstrap
+ 5315  zdi localstack logs
+ 5316  zdi localstack help
+ 5317  zdi localstack -help
+ 5318  zdi localstack update
+ 5319  zdi localstack logs
+ 5320  zdi entitlements restart
+ 5321  zdi entitlements logs --tail 100
+ 5322  zdi world restart
+ 5324  zdi entitlements update
+ 5325  zdi entitlements logs
+ 5326  zdi entitlements -help
+ 5327  zdi entitlements bootstrap
+ 5328  zdi entitlements logs
+ 5331  zdi central_admin restart
+ 5332  zdi central_admin logs
+ 5333  zdi admin_center_framework_access_logs restart
+ 5334  zdi admin_center_framework_account restart
+ 5373  zdi world stop
+ 5396  zdi onboard --only=ecr_login  
+ 5613  cd zdi
+ 5615  zdi update
+ 5623  zdi update
+ 6008  zdi attachments -d shell
+ 6043  zdi attachments -d shell
+ 6318  cd zdi
+ 6320  zdi world update
+ 6321  zdi update
+ 6502  zdi attachments -d shell
+ 6556  zdi attachments -d shell
+ 6558  cd zdi
+ 6560  zdi update
+ 6561  zdi world restart
+ 6609  zdi world stop
+ 6618  zdi world stop
+ 6619  zdi world restart
+ 7005  zdi classic console
+ 7009  zdi classic console
+ 7015  zdi classic logs
+ 7030  zdi update
+ 7031  zdi classic update
+ 7032  zdi classic -d update
+ 7040  zdi classic -d update
+ 7055  zdi classic -d update
+ 7056  zdi classic console
+ 7057  zdi classic -d console
+ 7066  zdi classic console
+ 7067  zdi central_admin restart
+ 7068  zdi classic restart
+ 7069  zdi admin_center_framework_account restart
+ 7070  zdi central_admin restart
+ 7071  zdi central_admin logs
+ 7073  zdi entitlements restart
+ 7074  zdi entitlements logs
+ 7076  zdi entitlements logs --tail 100
+ 7077  zdi entitlements pull --tag v1111
+ 7078  zdi entitlements restart --tag v1111
+ 7079  zdi entitlements logs --tail 100
+ 7082  zdi central_admin logs
+ 7083  zdi central_admin restart --acf-projects=admin_center_framework_home
+ 7084  zdi central_admin --acf-project admin_center_framework_security restart
+ 7085  zdi central_admin logs
+ 7086  zdi admin_center_framework_home update
+ 7087  zdi central_admin --acf-project admin_center_framework_home restart
+ 7088  zdi central_admin logs
+ 7089  zdi central_admin_client_assets_public_path update
+ 7090  zdi central_admin restart
+ 7091  zdi admin_center_framework_home restart 
+ 7092  zdi central_admin --acf-project admin_center_framework_security restart
+ 7093  zdi central_admin —-acf-project admin_center_framework_home restart
+ 7094  zdi central_admin --acf-project admin_center_framework_home restart
+ 7095  zdi zendesk_monitor pull_features   
+ 7097  zdi classic restart
+ 7098  zdi central_admin logs
+ 7140  cd zdi
+ 7202  zdi attachments update
+ 7203  zdi attachments bootstrap
+ 7204  zdi localstack reset
+ 7205  zdi attachments bootstrap
+ 7206  zdi attachments restart
+ 7207  zdi attachments logs
+ 7208  zdi attachments -d restart
+ 7209  zdi classic -d console
+ 7230  zdi attachments -d shell
+ 7243  zdi mysql status
+ 7274  zdi elasticmq status
+ 7275  zdi elasticmq logs
+ 7278  zdi classic console
+ 7415  zdi attachments -d shell
+ 7416  zdi update
+ 7419  cd zdi
+ 7421  zdi update
+ 7447  zdi attachments -d shell
+ 7521  zdi attachments -d shell
+ 7545  zdi world stop
+ 7547  zdi world start
+ 7604  zdi malware-scanning-service -d shell
+ 7612  zdi entitlements restart --tag v1111
+ 7614  zdi entitlements_consumers restart
+ 7616  zdi malware-scanning-service restart
+ 7618  zdi entitlements_consumers restart
+ 7619  zdi entitlements_consumers logs
+ 7620  zdi entitlements_consumers restart --tag v1111
+ 7622  zdi malware-scanning-service -d shell
+ 7623  zdi malware-scanning-service update
+ 7625  zdi malware-scanning-service -d shell
+ 7628  zdi malware-scanning-service -d shell
+ 7643  zdi malware-scanning-service -d restart
+ 7644  zdi malware-scanning-service bootstrap
+ 7645  zdi malware-scanning-service -d restart
+ 7648  zdi malware-scanning-service -d shell
+ 7668  zdi malware-scanning-service -d shell
+ 7669  zdi malware-scanning-service -d restart
+ 7670  zdi malware-scanning-service bootstrap
+ 7671  zdi malware-scanning-service -d restart
+ 7684  zdi malware-scanning-service bootstrap
+ 7685  zdi malware-scanning-service -d restart
+ 7688  zdi malware-scanning-service -d restart
+ 7691  zdi malware-scanning-service -d restart
+ 7693  zdi malware-scanning-service -d restart
+ 7696  zdi localstack logs
+ 7697  zdi localstack logs --tail 100
+ 7698  zdi elasticmq logs
+ 7699  zdi elasticmq logs --tail 1000
+ 7703  zdi localstack restart --branch ocalstack/localstack:3.8.1
+ 7704  zdi localstack restart --image localstack/localstack:3.8.1
+ 7705  zdi malware-scanning-service -d restart
+ 7706  zdi malware-scanning-service bootstrap
+ 7707  zdi malware-scanning-service -d restart
+ 7708  cd zdi/
+ 7710  zdi localstack resatrt
+ 7711  zdi localstack restart
+ 7712  zdi malware-scanning-service bootstrap
+ 7713  zdi malware-scanning-service -d restart
+ 7715  zdi malware-scanning-service bootstrap
+ 7716  zdi malware-scanning-service -d restart
+ 7717  zdi localstack restart
+ 7718  zdi localstack reset
+ 7719  zdi malware-scanning-service bootstrap
+ 7720  zdi malware-scanning-service -d restart
+ 7721  zdi localstack restart --image localstack/localstack:3.8.1
+ 7722  zdi malware-scanning-service -d restart
+ 7723  zdi malware-scanning-service bootstrap
+ 7724  zdi malware-scanning-service -d restart
+ 7729  zdi malware-scanning-service -d shell
+ 7741  zdi classic logs
+ 7742  zdi classic console
+ 7743  zdi classic -d shell
+ 7745  zdi classic -d shell
+ 7750  zdi classic update
+ 7751  zdi classic -d update
+ 7753  zdi classic -d update
+ 7754  zdi classic -d shell
+ 7755  zdi classic -d console
+ 7757  zdi classic -d restart
+ 7797  zdi classic -d restart
+ 8003  zdi classic update
+ 8004  zdi classic -d update
+ 8021  cd zdi/
+ 8030  zdi attachments -d restart
+ 8033  zdi attachments -d restart
+ 8049  zdi classic update
+ 8050  zdi classic -d update
+ 8051  zdi classic status
+ 8081  zdi attachments -d restart
+ 8082  zdi classic -d restart
+ 8083  zdi attachments -d restart --path=occam_client
+ 8084  zdi classic -d restart --path=occam_client
+ 8085  zdi classic --path=attachment_fu -d restart
+ 8086  zdi classic --path=attachment_fu -d 
+ 8087  zdi classic --path=attachment_fu -d restart
+ 8117  zdi classic --path=attachment_fu -d restart
+ 8126  zdi attachments -d shell
+ 8131  zdi classic --path=attachment_fu -d restart
+ 8132  zdi classic -d update
+ 8138  zdi classic -d update
+ 8139  zdi classic --path=attachment_fu -d update
+ 8140  zdi classic --path=attachment_fu  -e UNICORN_WORKERS=1 -d update
+ 8141  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d update
+ 8143  zdi attachments -d shell
+ 8146  zdi classic -d shell
+ 8147  zdi classic console
+ 8148  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d restart
+ 8149  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d update
+ 8150  zdi classic -d console
+ 8151  zdi classic console
+ 8152  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d update
+ 8153  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d restart
+ 8168  zdi attachments -d restart
+ 8169  zdi attachments bootstrap
+ 8170  zdi attachments -d restart
+ 8171  zdi attachments -d restart --remote-debug 
+ 8172  zdi attachments -d restart
+ 8173  zdi attachments -v -d restart --remote-debug 
+ 8174  zdi attachments -d restart --remote_debug 
+ 8176  zdi attachments -d restart --remote_debug 
+ 8182  zdi zendesk_monitor -dv shell
+ 8190  zdi zendesk_monitor -d shell
+ 8192  zdi zendesk_monitor -d shell
+ 8193  zdi zendesk_monitor -d update
+ 8194  cd Code/zendesk/zdi
+ 8203  zdi onboard --only=ecr_login  
+ 8204  zdi zendesk_monitor -d update
+ 8205  zdi zendesk_monitor -dv update
+ 8206  zdi zendesk_monitor -dv shell
+ 8209  zdi classic console
+ 8214  zdi classic -d console
+ 8215  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d console
+ 8216  zdi classic --path=attachment_fu  -e UNICORN_TIMEOUT=1800 -e UNICORN_WORKERS=1 -d restart
+ 8219  zdi classic console
+ 8220  zdi classic -d shell
+ 8221  zdi classic shell
+ 8234  zdi classic console
+ 8235  zdi classic -d console
+ 8266  zdi mysql start\nzdi mysql console\n
+ 8283  cd zdi
+ 8465  zdi localstack status
+ 8466  zdi localstack logs
+ 8468  zdi localstack logs
+ 8469  zdi localstack restart
+ 8653  zdi classic console
+ 8746  zdi classic console
+ 8755  zdi classic console
+ 8796  zdi attachments -d restart --remote_debug 
+ 8943  cd zdi
+ 8968  cd zdi/
+ 8970  zdi update
+ 8973  zdi update
+ 8976  zdi world resatrt
+ 8977  zdi world restart
+ 8979  zdi attachments start
+ 8980  zdi attachments update
+ 8981  zdi attachments -d shell
+ 8985  zdi attachments -d shell
+ 8987  cd zdi/bin/
+ 9258  zdi attachments -d update
+ 9434  zdi world stop
+ 9437  cd zdi
+ 9439  zdi update
+ 9441  zdi update
+ 9443  zdi update
+ 9446  zdi world restart
+ 9545  zdi classic console
+ 9602  zdi classic -d update
+ 9656  cd zdi
+ 9658  zdi update
+ 9660  zdi world restart
+ 9682  cd zdi
+ 9685  zdi update
+ 9692  cd Code/zendesk/zdi
+ 9694  zdi update
+ 9696  zdi world restart
+ 9700  zdi classic -d update
+ 9703  zdi classic -d restart
+ 9720  zdi classic logs
+ 9724  zdi classic logs
+ 9725  zdi classic logs --tail 1000
+ 9979  zdi classic restart
+ 9980  zdi classic logs
+10001  zdi classic -d restart
+10006* zdi classic -d restart
+10030* zdi classic -d restart
+10058* zdi classic restart
+10059* zdi classic logs
+10063* zdi classic restart
+10064* zdi classic logs
+10068* history | grep zdi
+10069* history | grep "zdi classic"
+10072  history | grep 'zdi classic'
+10073  history | grep 'zdi'
