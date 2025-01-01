@@ -1,0 +1,5 @@
+
+	k9s to access images
+	-  k9s --context pod998 -n attachments
+
+	logs -  stern --context pod998 -n attachments $podname
