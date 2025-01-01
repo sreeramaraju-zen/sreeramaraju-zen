@@ -1,0 +1,393 @@
+   45  kubectl get pods | grep attachments
+   46  kubectl port-forward attachments-api-server-7c5b97cbfd-d4m4c 7943:7943
+  112  kubectl --context pod998 get pods
+  113  kubectl --context pod998 get pods | grep classic
+  114  kubectl --context pod998 -n classic get pods
+  136  kubectl --context pod998 -n classic exec -it classic-app-server-6f7f7578dc-48ctw  -- bash
+  137  kubectl --context pod998 -n csunco get pods
+  138  kubectl --context pod998 -n sunco get pods
+  139  kubectl --context pod998 -n classic exec -it sunco-web-c7df995f7-blgp4  -- bash
+  140  kubectl --context pod998 -n sunco exec -it sunco-web-c7df995f7-blgp4  -- bash
+  412  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods -o=custom-columns=IPADDRESS | grep api-serverOD\n
+  413  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods -o=custom-columns=IPADDRESS\n
+  414  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods -o=custom-columns=IP\n
+  415  kubectl --context pod998 --namespace opswat-malware-scanner -o get pods custom-columns=IP\n
+  416  kubectl --context pod998 --namespace opswat-malware-scanner -o get pods\n
+  417  kubectl --context pod998 --namespace opswat-malware-scanner -o=custom-columns=NAME get pods\n
+  418  kubectl --context pod998 --namespace opswat-malware-scanner -o=custom-columns=NAME get pods | api-server\n
+  419  kubectl --context pod998 --namespace opswat-malware-scanner -o=custom-columns=NAME get pods | grep api-server\n
+  420  kubectl --context pod998 --namespace opswat-malware-scanner get pods | grep api-server\n
+  421  kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=IP:.status.podIP | grep api-server\n
+  422  kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=IP:.status.podIP\n
+  423  ip = kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods | grep api-server | awk '{print $6}'\n
+  424  ip=kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods | grep api-server | awk '{print $6}'\n
+  443  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods\n
+  445  ip=$(kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods | grep api-server | awk '{print $6}')\n
+  446  ip=$(kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods | grep api-server | awk '{print $5}')\n
+  447  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods | grep api-server | awk '{print $6}'\n
+  448  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods | grep api-server\n
+  449  kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAMESPACE:.metadata.namespace,NAME:.metadata.name,IP:.status.podIP | grep api-server\n
+  450  kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server\n
+  451  kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $1}'\n
+  452  kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $2}'\n
+  453  ip= $(kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $2}')\n
+  583  ip=$(kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $2}')\n
+  625  kubectl --as admin --as-group system:masters --context pod26 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+  693  kubectl --context pod29 --namespace opswat-malware-scanner -o wide get pods
+  760  kubectl --context pod25 --namespace opswat-malware-scanner -o wide get pods
+  764  kubectl --context pod27 --namespace opswat-malware-scanner -o wide get pods
+  771  kubectl --context pod998 --namespace permissions -o wide get gateway
+  872  kubectl --context pod998 --as admin --as-group grasshoppers-oncall -n serene-garden auth can-i delete pods\n
+  873  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete pods\n
+  963  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete hpa\n
+ 1000  kubectl --context pod27 --namespace attachments -o wide get gateways
+ 1001  kubectl --context pod27 --namespace attachments -o wide get virtualservice
+ 1002  kubectl --context pod27 --namespace attachments -o wide get istio-gateways
+ 1007  kubectl --context pod17 --namespace opswat-malware-scanner -o wide get pods
+ 2553  kubectl --as admin --as-group system:masters --context pod29 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 2554  kubectl --context scooter-usw2 exec -it api-server:attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2555  kubectl --context scooter-usw2 -n attacahments exec -it api-server:attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2556  kubectl --context scooter-usw2 exec -it api-server:attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2557  kubectl --context scooter-usw2 -n api-server exec -it attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2640  kubectl port-forward attachments-api-server-5c9b4f448c-2nzkc 7943:7943
+ 2641  ➜ kubectl get pods | grep -i attachments\nattachments-api-server-devspace-5c6b9554-p9trw                                   1/1     Running     0          2m33s\nattachments-create-aurora-schemas-create-schemas-2420943221                      0/2     Completed   0          7m45s\nattachments-mysql-migrations-fxrg7                                               0/1     Completed   0          7m46s\nattachments-s3-create-buckets-create-buckets-952984594                           0/2     Completed   0          7m45s
+ 2642  kubectl get pods | grep -i attachments\nattachments-api-server-devspace-5c6b9554-p9trw                                   1/1     Running     0          2m33s\nattachments-create-aurora-schemas-create-schemas-2420943221                      0/2     Completed   0          7m45s\nattachments-mysql-migrations-fxrg7                                               0/1     Completed   0          7m46s\nattachments-s3-create-buckets-create-buckets-952984594                           0/2     Completed   0          7m45s
+ 2644  kubectl get pods | grep -i attachments
+ 2645  kubectl port-forward attachments-api-server-devspace-7df6958cb7-wvwn8 7943:7943
+ 2647  kubectl port-forward attachments-api-server-devspace-7df6958cb7-wvwn8 7943:7943
+ 2649  kubectl port-forward attachments-api-server-devspace-7df6958cb7-wvwn8 7943:7943
+ 3299  cd kubectl_config/
+ 3482  kubectl --context pod999 --namespace opswat-malware-scanner -o wide get pods
+ 3483  kubectl --context pod998 --namespace opswat-malware-scanner -o wide get pods
+ 3590  kubectl --context pod26 --namespace opswat-malware-scanner -o wide get pods\n
+ 3660  kubectl --context pod26 --namespace opswat-malware-scanner -o wide get pods
+ 3772  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 3791  kubectl --context pod26 --namespace opswat-malware-scanner -o wide get pods
+ 3881  ip=$(kubectl --context $context --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | tail -n 1| awk '{print $2}')
+ 3882  ip=$(kubectl --context pod998 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | tail -n 1| awk '{print $2}')
+ 3886  ip=$(kubectl --context pod26 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | tail -n 1| awk '{print $2}')
+ 3889  ip=$(kubectl --context pod26 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $2}')
+ 3892  ip_matches=$(kubectl --context pod26 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $2}')
+ 3898  ip_matches=$(kubectl --context pod26 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{println $2}')
+ 3900  ip_matches=$(kubectl --context pod26 --namespace opswat-malware-scanner get pods -o=custom-columns=NAME:.metadata.name,IP:.status.podIP | grep api-server | awk '{print $2}')
+ 5414  kubectl --context pod998 --as admin --as-group spyglass-oncall -n opswat-malware-scanner auth can-i delete api-server
+ 5428  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5439  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5443  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5445  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5446  kubectl --context pod998 --as admin --as-group spyglass-oncall -n opswat-malware-scanner auth can-i delete api-server
+ 5447  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete api-server
+ 5448  kubectl --context pod998 --as admin --as-group spyglass-oncall -n opswat-malware-scanner auth can-i delete opswat-malware-scanner-api-server
+ 5449  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete api-server
+ 5450  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete hpa
+ 5451  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete replica
+ 5452  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete pod
+ 5453  kubectl --context pod998 --as admin --as-group spyglass-oncall -n opswat-malware-scanner auth can-i delete hpa
+ 5454  kubectl --context pod998 --as admin --as-group spyglass-oncall -n opswat-malware-scanner auth can-i delete pod
+ 5456  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5458  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner delete pod  opswat-malware-scanner-api-server-0 
+ 5460  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5487  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 5523  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner delete pod  opswat-malware-scanner-api-server-0 
+ 6023  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete cronjob
+ 6024  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete api-server
+ 6025  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete cronjob
+ 6026  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob
+ 6027  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob attachmentsuploads-cleanup-job
+ 6029  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i create cronjob
+ 6032  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6035  kubectl --context pod998 --namespace attachments -o wide get pods
+ 6061  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete cronjob
+ 6062  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6064  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6065  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6066  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachmentsuploads-cleanup-job -- bash
+ 6067  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachments-uploads-cleanup-job -- bash
+ 6068  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6069  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6070  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6071  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6072  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachments-uploads-cleanup-job -- bash
+ 6073  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6074  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6101  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete cronjob
+ 6102  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6103  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6104  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6107  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6109  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6111  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6112  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6113  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob attachmentsuploads-cleanup-job
+ 6114  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6127  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6129  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6134  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6135  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6154  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6155  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6157  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6159  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6160  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6161  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6197  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6198  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6199  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6200  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec apply uploads-cleanup-job
+ 6203  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec apply uploads-cleanup-job.yml
+ 6204  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply uploads-cleanup-job.yml
+ 6205  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6210  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6213  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6214  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6215  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6216  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6221  execution.name=pod998 kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6222  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6223  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6224  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6226  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6228  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6230  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6231  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6232  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6236  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6238  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6239  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6241  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6242  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6262  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6264  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6267  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6268  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6269  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6272  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6273  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6276  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6288  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6290  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6330  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6333  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6334  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6335  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6336  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6339  ag kubectl.kubernetes.io/last-applied-configuration
+ 6340  ag kubectl.kubernetes.io
+ 6341  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6342  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6347  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6351  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6352  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6353  kubectl --as admin --as-group system:masters --context pod998 -n attachments create -f uploads-cleanup-job.yml --save-config
+ 6354  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6355  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6356  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6357  kubectl --as admin --as-group system:masters --context pod998 -n attachments create -f uploads-cleanup-job.yml --save-config
+ 6358  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6359  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6364  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6365  kubectl --as admin --as-group system:masters --context pod998 -n attachments create -f uploads-cleanup-job.yml --save-config
+ 6366  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6372  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6373  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6374  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6375  kubectl --as admin --as-group system:masters --context pod998 -n attachments create -f uploads-cleanup-job.yml --save-config
+ 6376  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6377  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6381  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6382  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6383  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6385  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6386  kubectl --as admin --as-group system:masters --context pod998 -n attachments create -f uploads-cleanup-job.yml --save-config
+ 6387  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6389  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6391  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6396  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6397  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6398  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6401  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6402  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6403  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6404  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6405  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6406  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6407  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6410  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6412  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6413  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6414  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6415  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6417  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6420  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6421  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6422  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6423  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6426  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6433  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6434  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6435  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6437  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6438  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6439  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6445  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6451  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6454  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6456  kubectl --as admin --as-group system:masters --context pod998 -n attachments create -f uploads-cleanup-job.yml --save-config
+ 6457  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6460  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6473  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6474  kubectl --as admin --as-group system:masters --context pod998 -n attachments delete cronjob uploads-cleanup-job
+ 6475  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6490  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6491  kubectl --as admin --as-group system:masters --context pod998 -n attachments apply -f uploads-cleanup-job.yml
+ 6515  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6516  kubectl --context pod998 --namespace attachments -o wide get pods
+ 6517  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6792  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6809  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 6912  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 6913  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 6915  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it istio-proxy -- bash
+ 6918  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 7152  kubectl exec -it deploy/classic-app-server -- bash
+ 7154  kubectl exec -it deploy/classic-app-server -- bash
+ 7155  kubectl exec -it deployment/classic-app-server -- /bin/bash
+ 7161  kubectl exec -it deployment/classic-app-server -- /bin/bash
+ 7163  kubectl config
+ 7164  kubectl config current-context
+ 7165  kubectl config get-contexts
+ 7166  kubectl config use-context scooter-usw2
+ 7167  kubectl exec -it deployment/classic-app-server -- /bin/bash
+ 7805  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 7807  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 7818  kubectl --context pod998 --namespace attachments -o wide get cronjobs
+ 8776  which kubectl
+ 8833  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete replica
+ 8834  kubectl --context pod998 --as admin --as-group spyglass-oncall -n opswat-malware-scanner auth can-i delete pod
+ 8835  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete replica
+ 8900  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it uploads-cleanup-job -- bash
+ 8901  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it api-server -- bash
+ 8902  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachments-uploads-cleanup-job -- bash
+ 8903  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachments-api-server -- bash
+ 8905  kubectl --as admin --as-group system:masters --context pod998 -n opswat-malware-scanner exec -it opswat-malware-scanner-api-server-0 -- bash
+ 8906  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachemnts-api-server -- bash
+ 8908  kubectl --as admin --as-group system:masters --context pod998 -n attachments exec -it attachments-api-server-5cf58bc67c-27wnx  -- bash
+ 8998  kubectl --context pod998 --as admin --as-group spyglass-oncall -n attachments auth can-i delete replica
+ 8999  kubectl --context pod998-admin --as admin --as-group spyglass-oncall -n attachments auth can-i delete replica
+ 9000  kubectl --context pod998 --as admin --as-group system:masters -n attachments auth can-i delete replica
+ 9001  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9004  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod attachments-api-server-86df4d4646-j82h5
+ 9007  kubectl --context pod998 --namespace attachments -o get events
+ 9008  kubectl --context pod998 --namespace attachments get events
+ 9009  kubectl --context pod998 --namespace attachments get events attachments-api-server-86df4d4646-9zns4 
+ 9010  kubectl --context pod998 --namespace attachments attachments-api-server-86df4d4646-9zns4 get events 
+ 9011  kubectl --context pod998 --namespace attachments get events -w
+ 9012  kubectl --context pod998 --namespace attachments get events -w -o
+ 9013  kubectl --context pod998 --namespace attachments get events -wo
+ 9014  kubectl --context pod998 --namespace attachments get events -w
+ 9015  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod attachments-api-server-86df4d4646-9zns4
+ 9016  kubectl --context pod998 --namespace attachments get events --for attachments-api-server-86df4d4646-9zns4 
+ 9017  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86df4d4646-9zns4 
+ 9018  kubectl --context pod998 --as admin --as-group system:masters -n attachments evict pod attachments-api-server-86df4d4646-9zns4
+ 9019  kubectl evict --context pod998 --as admin --as-group system:masters -n attachments pod attachments-api-server-86df4d4646-9zns4
+ 9029  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9030  kubectl --context pod998 --namespace attachments  get pod attachments-api-server-86df4d4646-494zm -o yaml
+ 9031  kubectl --context pod998 --namespace attachments  get pod attachments-api-server -o yaml
+ 9032  kubectl --context pod998 --namespace attachments  get pod attachments-api-server-* -o yaml
+ 9033  kubectl --context pod998 --namespace attachments  get pod attachments-api-server-0 -o yaml
+ 9048  kubectl krew
+ 9049  kubectl krew install evict
+ 9051  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9054  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86689cb84c-7wvpj
+ 9055  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod attachments-api-server-86689cb84c-7wvpj
+ 9056  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86689cb84c-7wvpj
+ 9058  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name= attachments-api-server-86689cb84c-4gpqh
+ 9059  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86689cb84c-4gpqh
+ 9065  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86689cb84c-c58t7
+ 9076  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-54fd8c578f-t4ctx
+ 9078  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name= attachments-api-server-54fd8c578f-t4ctx
+ 9079  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-54fd8c578f-t4ctx
+ 9082  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9083  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-66c4cfb8cb-6bvfc
+ 9084  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod attachments-api-server-66c4cfb8cb-6bvfc --grace-period 30
+ 9085  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-66c4cfb8cb-6bvfc
+ 9087  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-66c4cfb8cb-6bvfc
+ 9088  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-54fd8c578f-t4ctx
+ 9106  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9107  kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server
+ 9108  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9109  kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server
+ 9110  kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}')
+ 9111  kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}'
+ 9112  kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1
+ 9113  podname=kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1
+ 9114  podname = `kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 11
+ 9115  podname = `kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1`
+ 9116  podname = $(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9117  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9120  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9121  function deletePod(podname) {\n  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30\n}\n
+ 9123  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)\n
+ 9127  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9130  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9133  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-j48fx
+ 9134  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-54fd8c578f-t4ctx
+ 9135  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-j48fx
+ 9136  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9140  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9141  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-j48fx
+ 9142  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-54fd8c578f-t4ctx
+ 9143  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-j48fx
+ 9145  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-8hh8r
+ 9146  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server
+ 9148  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server
+ 9151  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server
+ 9152  kubectl --context pod999 --namespace attachments -o wide get pods
+ 9153  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-747fc54d95-v7rdm 
+ 9155  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-66c4cfb8cb-6bvfc
+ 9156  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86df4d4646-9zns4
+ 9159  kubectl --context pod998 -n attachments get events
+ 9160  kubectl --context pod999 -n attachments get events
+ 9161  kubectl --context pod998 -n attachments get events
+ 9162  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-86df4d4646-9zns4
+ 9163  kubectl --context pod999 --namespace attachments -o wide get pods
+ 9164  kubectl --context pod998 --namespace attachments -o wide get pods
+ 9167  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-8hh8
+ 9168  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-b97c6c9c7-8hh8r
+ 9169  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server
+ 9170  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=attachments
+ 9171  kubectl --context pod998 --namespace attachments get events
+ 9172  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)\ndelete_pod() {\n  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30\n}\n\npod_logs() {\n  stern --context pod998 -n attachments $podname\n}\n\nkube_events() {\n  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname\n}\n
+ 9176  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30
+ 9177  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9178  kubectl --context pod998 --namespace attachments  get pod $podname -o yaml
+ 9179  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9180  kubectl --context pod998 --namespace attachments  get pod $podname -o yaml
+ 9181  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9182  kubectl --context pod998 --namespace attachments  get pod $podname -o yaml > ~/man.yaml
+ 9184  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9185  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9186  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9188  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9189  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9190  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30
+ 9191  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9192  kubectl --context pod998 --namespace attachments describe events --field-selector involvedObject.name=$podname
+ 9193  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9194  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname --sort-by=.metadata.creationTimestamp
+ 9195  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname --since
+ 9196  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9201  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9202  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9204  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9205  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30
+ 9206  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname
+ 9208  kube_events() {\n  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname\n}\n
+ 9212  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9214  delete_pod() {\n  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30\n}
+ 9217  curr_pod() {\n  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)\n  export podname=$podname\n}\n
+ 9219  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9233  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9235  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
+ 9245  kubectl --context pod27 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-7b7fb86b7-w6t4b
+10018  history | grep kubectl
