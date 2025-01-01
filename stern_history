@@ -1,0 +1,299 @@
+  101  stern attachments-api-server
+  115  stern --context pod998 -n attachments api-server | grep -v 19754492
+  116  stern --context pod998 -n attachments api-server | grep -v error
+  117  stern --context pod998 -n attachments api-server | grep error
+  118  stern --context pod998 -n attachments api-server | grep 503
+  119  stern --context pod998 -n attachments | grep 19754492
+  120  stern --context pod998 -n attachments --all | grep 19754492
+  121  stern --context pod998 -n attachments -A | grep 19754492
+  122  stern --context pod998 -n attachments -A
+  123  stern --context pod998 -n attachments a
+  124  stern --context pod998 -n attachments a | grep 19754492
+  125  stern --context pod998 -n attachments --tail
+  126  stern --context pod998 -n attachments isio
+  127  stern --context pod998 -n attachments envoy
+  128  stern --context pod998 -n attachments istio
+  129  stern --context pod998 -n attachments nginx
+  130  stern --context pod998 -n attachments isio --since 1h
+  131  stern --context pod998 -n attachments --since 15m isio
+  132  stern --context pod998 -n attachments --since 15m istio
+  133  stern --context pod998 -n attachments api-server | grep 19754492
+  142  stern --context pod998 -n sunco istio-proxy | grep 19754492
+  143  stern --context pod998 -n sunco istio-proxy
+  144  stern --context pod998 -n sunco web
+  145  stern --context pod998 -n sunco istio-proxy --max-log-requests 10000
+  146  stern --context pod998 -n sunco web --max-log-requests 10000
+ 1061  stern --context pod998 -n attachments api-server
+ 1062  stern attachments-api-server | grep -v ping
+ 1063  stern --context pod998 -n attachments api-server | grep -v ping
+ 1072  stern --context pod998 -n attachments api-server | grep uploads
+ 1073  stern --context pod998 -n attachments api-server | grep uploads | grep POST
+ 1123  stern --context pod998 -n attachments api-server | grep uploads | grep POST
+ 1124  stern --context pod998 -n attachments api-server | grep "request.path"
+ 1125  stern --context pod998 -n attachments api-server | grep -v ping | grep "request.path"
+ 1242  stern --context pod998 -n attachments api-server | grep -v ping | grep "45791"
+ 1436  stern --context pod998 -n attachments api-server | grep -v ping | grep "400"
+ 1437  stern --context pod998 -n attachments api-server | grep -v ping | grep " 400 "
+ 1442  stern --context pod998 -n attachments api-server | grep -v ping | grep "=400"
+ 1444  stern --context pod998 -n attachments api-server | grep -v ping | grep "error"
+ 1793  stern --context pod998 -n attachments api-server | grep -v ping | grep "error"
+ 1794  stern --context pod998 -n attachments api-server | grep -v ping | grep "-404"
+ 1795  stern --context pod998 -n attachments api-server | grep -v ping | grep "=400"
+ 1796  stern --context pod998 -n attachments api-server | grep -v ping | grep "=404"
+ 1798  stern --context pod998 -n attachments api-server | grep -v ping | grep "16913111"
+ 1800  stern --context pod998 -n attachments api-server | grep -v ping | grep "16913111"
+ 1801  stern --context pod998 -n attachments api-server | grep -v ping
+ 1802  stern --context pod998 -n attachments api-server | grep -v ping | grep uploads
+ 1806  stern --context pod998 -n attachments api-server | grep -v ping | grep "/api/services/uploads"
+ 2346  stern --context pod998 -n attachments api-server | grep -v ping | grep error
+ 2347  stern --context pod998 -n attachments api-server
+ 2348  stern --context pod998 -n attachments api-server | grep -v ping
+ 2372  stern --context pod998 -n attachments api-server | grep -v ping
+ 2402  stern --context pod998 -n attachments api-server | grep -v ping
+ 2452  stern --context pod998 -n zorg | grep attachment_content
+ 2453  stern --context pod998 -n zorg zorg-nginx | grep attachment_content
+ 2454  stern --context pod998 -n zorg zorg-nginx | grep 503
+ 2455  stern --context pod998 -n zorg zorg-nginx --max-log-requests  | grep 503
+ 2456  stern --context pod998 -n zorg zorg-nginx --max-log-requests  1000 | grep 503
+ 2457  stern --context pod998 -n zorg zorg-nginx --max-log-requests  1000 | grep attachment_content
+ 2461  stern --context pod998 -n zorg zorg-nginx --max-log-requests  1000 | grep error
+ 2462  stern --context pod998 -n zorg zorg-nginx --max-log-requests  1000 | grep error | grep attachment
+ 2676  stern 
+ 2728  stern attachments-api-server | grep -v ping
+ 2909  stern --context pod999 -n attachments api-server | grep -v ping
+ 2910  stern --context pod998 -n attachments api-server | grep -v ping
+ 2921  stern --context pod999 -n attachments api-server | grep -v ping
+ 3192  stern --context pod999 -n attachments api-server | grep -v ping
+ 3193  stern --context pod998 -n attachments api-server | grep -v ping
+ 3279  stern --context pod999 -n attachments api-server | grep -v ping
+ 3280  stern --context pod998 -n attachments api-server | grep -v ping
+ 3293  stern --context pod20 -n attachments api-server | grep -v ping
+ 3294  stern --context pod30 -n attachments api-server | grep -v ping
+ 3295  stern --context pod20 -n attachments api-server | grep -v ping
+ 3296  stern --context pod30 -n attachments api-server | grep -v ping
+ 3313  stern --context pod30 -n attachments api-server | grep -v ping
+ 3314  stern --context pod30 -n attachments api-server | grep -v ping | grep error
+ 3320  stern --context pod999 -n attachments api-server | grep -v ping
+ 3344  stern --context pod999 -n attachments api-server | grep -v ping
+ 3345  stern --context pod998 -n attachments api-server | grep -v ping
+ 3421  stern --context pod999 -n attachments api-server | grep -v ping
+ 3484  stern --context pod998 -n attachments api-server | grep -v ping
+ 3541  stern --context pod999 -n attachments api-server | grep -v ping
+ 3542  stern --context pod998 -n attachments api-server | grep -v ping
+ 3627  stern --context pod998 -n malware-scanning-service | grep -v ping
+ 3628  stern --context pod998 -n malware_scanning_service | grep -v ping
+ 3762  stern --context pod998 -n malware_scanning_service | grep -v ping
+ 3763  stern --context pod998 -n malware-scanning-service | grep -v ping
+ 3764  stern --context pod998 -n malware-scanning-service
+ 3765  stern --context pod998 -n malware-scanning-service | grep -v ping
+ 3766  stern --context pod998 -n attachments | grep -v ping
+ 3767  stern --context pod998 -n malware-scanning-service api-service | grep -v ping
+ 3769  stern --context pod998 -n malware-scanning-service api-server | grep -v ping
+ 3770  stern --context pod998 -n malware-scanning-service api-server | grep -v ping | grep error
+ 3773  stern --context pod998 -n malware-scanning-service api-server | grep -v ping
+ 3774  stern --context pod998 -n malware-scanning-service api-server | grep error
+ 3775  stern --context pod998 -n malware-scanning-service api-server | grep -v ping
+ 3776  stern --context pod998 -n malware-scanning-service api-server --since 5m| grep error
+ 3777  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep error
+ 3778  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep 503
+ 3779  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep error
+ 3781  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep error
+ 3782  stern --context pod998 -n malware-scanning-service api-server --since 5m 
+ 3783  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep archive_EICAR.zip
+ 3858  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep archive_EICAR.zip
+ 3860  stern --context pod26 -n malware-scanning-service api-server --since 5m | grep error
+ 4269  stern --context pod15 -n classic --since 5m | grep error
+ 4270  stern --context pod15 -n classic --since 5m
+ 4271  stern --context pod15 -n classic
+ 4272  stern --context pod15 -n classic-app-server
+ 4273  stern --context pod15 -n classic -s 1m
+ 4274  stern --context pod15 -n classic -s --prompt
+ 4275  stern --context pod15 -n classic -p
+ 4276  stern --context pod15 classic-app-server -n classic -p
+ 4277  stern --context pod15 -n classic -p
+ 4278  stern --context pod15 -n classic app-server
+ 4279  stern --context pod15 -n classic app-server --max-log-requests 1000
+ 4280  stern --context pod15 -n classic app-server --max-log-requests 1000 | grep error
+ 4281  stern --context pod15 -n classic app-server --max-log-requests 1000 | grep attachments
+ 4282  stern --context pod15 -n classic app-server --max-log-requests 1000 | grep attachments | grep error | grep upload
+ 4283  stern --context pod15 -n classic app-server --max-log-requests 1000 | grep attachments | grep error
+ 4284  stern --context pod15 -n classic app-server --max-log-requests 1000 | grep attachments | grep upload
+ 4302  stern --context pod25 -n attachments 
+ 4303  stern --context pod25 -n attachments api-server
+ 4304  stern --context pod25 -n attachments api-server | grep -v ping
+ 4645  stern --context internaltools-staging-use1 -n load-generators generators| grep -v ping
+ 4646  stern --context internaltools-staging-use1 -n load-generators generators
+ 4647  stern --context internaltools-staging-use1 -n load-generators
+ 4651  stern --context internaltools-staging-use1 -n load-generators generator-core
+ 4652  stern --context internaltools-staging-use1 -n load-generators generator-core | grep -v z/
+ 4653  stern --context internaltools-staging-use1 -n load-generators generator-core --since 15m | grep -v z/ | grep mss
+ 4654  stern --context internaltools-staging-use1 -n load-generators generator-core --since 15m | grep error
+ 4655  stern --context internaltools-staging-use1 -n load-generators generator-core --since 15m | grep -C 10 error
+ 5113  stern --context pod26 -n attachments api-server | grep -v ping
+ 5114  stern --context pod26 -n attachments api-server | grep -v error
+ 5115  stern --context pod26 -n attachments api-server | grep error
+ 5279  stern --context pod998 -n malware-scanning-service api-server --since 5m | grep archive_EICAR.zip
+ 5280  stern --context pod998 -n malware-scanning-service api-server --since 5m
+ 5282  stern --context pod998 -n opswat-malware-scanner api-server --since 5m
+ 5477  stern --context pod998 -n opswat-malware-scanner api-server --since 5m
+ 5478  stern --context pod998 -n opswat-malware-scanner api-server --since 15m
+ 5479  stern --context pod998 -n opswat-malware-scanner api-server --since 1h
+ 5480  stern --context pod998 -n opswat-malware-scanner api-server --since 1h | grep disable
+ 5485  stern --context pod998 -n opswat-malware-scanner api-server --since 1h | grep disable
+ 5488  stern --context pod998 -n opswat-malware-scanner api-server --since 1h | grep "failed to disable engine"
+ 5489  stern --context pod998 -n opswat-malware-scanner api-server --since 15m | grep "failed to disable engine"
+ 5503  stern --context pod998 -n opswat-malware-scanner api-server --since 1h | grep disable
+ 5504  stern --context pod998 -n opswat-malware-scanner api-server --since 15m
+ 5516  stern --context pod998 -n opswat-malware-scanner api-server --since 1h | grep disable
+ 5517  stern --context pod998 -n opswat-malware-scanner api-server --since 10m
+ 5518  stern --context pod998 -n opswat-malware-scanner api-server --since 1h
+ 5521  stern --context pod998 -n opswat-malware-scanner api-server --since 1h
+ 5525  stern --context pod998 -n opswat-malware-scanner api-server --since 15m
+ 5555  stern --context pod998 -n opswat-malware-scanner api-server --since 15m
+ 5563  stern --context pod998 -n opswat-malware-scanner api-server --since 15m
+ 5573  stern --context pod998 -n opswat-malware-scanner api-server --since 15m
+ 5678  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep license
+ 5679  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep "Error gathering"
+ 5680  stern --context pod998 -n opswat-malware-scanner api-server --since 4h | grep "Error gathering"
+ 5693  stern --context pod998 -n opswat-malware-scanner api-server --since 10m
+ 6010  stern --context pod26 -n attachments api-server | grep -v error
+ 6012  stern --context pod26 -n attachments api-server | grep -v error
+ 6013  stern --context pod26 -n attachments uploads-cleanup-job | grep -v error
+ 6014  stern --context pod26 -n attachments uploads-cleanup-job
+ 6015  stern --context pod998 -n attachments uploads-cleanup-job
+ 6017  stern --context pod998 -n attachments uploads-cleanup-job
+ 6018  stern --context pod998 -n attachments api-server
+ 6019  stern --context pod998 -n attachments uploads-cleanup-job
+ 6021  stern --context pod998 -n attachments
+ 6022  stern --context pod998 -n attachments *
+ 6031  stern --context pod998 -n attachments uploads-cleanup-job
+ 6034  stern --context pod998 -n attachments uploads-cleanup-job
+ 6036  stern --context pod998 -n attachments uploads-cleanup-job
+ 6059  stern --context pod998 -n attachments uploads-cleanup-job
+ 6063  stern --context pod998 -n attachments uploads-cleanup-job
+ 6106  stern --context pod998 -n attachments uploads-cleanup-job
+ 6108  stern --context pod998 -n attachments uploads-cleanup-job
+ 6128  stern --context pod998 -n attachments uploads-cleanup-job
+ 6133  stern --context pod998 -n attachments uploads-cleanup-job
+ 6156  stern --context pod998 -n attachments uploads-cleanup-job
+ 6225  stern --context pod998 -n attachments uploads-cleanup-job
+ 6237  stern --context pod998 -n attachments uploads-cleanup-job
+ 6261  stern --context pod998 -n attachments uploads-cleanup-job
+ 6274  stern --context pod998 -n attachments uploads-cleanup-job
+ 6310  stern --context pod998 -n attachments api-server
+ 6311  stern --context pod998 -n attachments api-server | grep -v z/ping
+ 6312  stern --context pod998 -n attachments api-server | grep attachment_content
+ 6313  stern --context pod998 -n attachments api-server | grep -C 20 attachment_content
+ 6388  stern --context pod998 -n attachments uploads-cleanup-job
+ 6408  stern --context pod998 -n attachments uploads-cleanup-job
+ 6425  stern --context pod998 -n attachments uploads-cleanup-job
+ 6441  stern --context pod998 -n attachments uploads-cleanup-job
+ 6446  stern --context pod998 -n attachments uploads-cleanup-job
+ 6452  stern --context pod998 -n attachments uploads-cleanup-job
+ 6459  stern --context pod998 -n attachments uploads-cleanup-job
+ 6645  stern --context pod998 -n opswat-malware-scanner api-server --since 2h
+ 6646  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep cyla
+ 6669  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep cyla
+ 6670  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep 500
+ 6671  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep status:500
+ 6672  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep Attempt
+ 6673  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep -c 20 Attempt 
+ 6674  stern --context pod998 -n opswat-malware-scanner api-server --since 2h | grep -C 20 Attempt 
+ 6686  stern --context pod998 -n opswat-malware-scanner api-server
+ 6701  stern --context pod998 -n opswat-malware-scanner api-server
+ 6710  stern --context pod998 -n opswat-malware-scanner api-server
+ 6714  stern --context pod998 -n opswat-malware-scanner api-server
+ 6718  stern --context pod998 -n opswat-malware-scanner api-server
+ 6720  stern --context pod26 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6721  stern --context pod15 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6722  stern --context pod25 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6723  stern --context pod25 -n opswat-malware-scanner api-server --since 15m | grep cyla
+ 6724  stern --context pod30 -n opswat-malware-scanner api-server --since 15m | grep cyla
+ 6725  stern --context pod25 -n opswat-malware-scanner api-server --since 15m | grep cyla
+ 6726  stern --context pod25 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6727  stern --context pod15 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6728  stern --context pod17 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6729  stern --context pod13 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6730  stern --context pod31 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6731  stern --context pod18 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6732  stern --context pod19 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6733  stern --context pod20 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6734  stern --context pod23 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6735  stern --context pod27 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6736  stern --context pod28 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6737  stern --context pod29 -n opswat-malware-scanner api-server --since 30m | grep cyla
+ 6744  stern --context pod998 -n attachments api-server | grep -C 20 429
+ 6745  stern --context pod998 -n attachments api-server | grep  429
+ 6746  stern --context pod998 -n attachments api-server | grep  :429
+ 6747  stern --context pod998 -n attachments api-server | grep  rate
+ 6811  stern --context pod998 -n malware-scanning-service api-server | grep  rate
+ 6812  stern --context pod998 -n malware-scanning-service api-server
+ 6819  stern --context pod998 -n malware-scanning-service api-server
+ 6820  stern --context pod998 -n malware-scanning-service api-server | grep Extrac
+ 6821  stern --context pod998 -n malware-scanning-service api-server | grep Extracted_files
+ 6878  stern --context pod28 -n opswat-malware-scanner api-server --since 30m
+ 6879  stern --context pod28 -n opswat-malware-scanner api-server --since 1m
+ 6880  stern --context pod998 -n malware-scanning-service api-server | grep Extrac
+ 6881  stern --context pod998 -n malware-scanning-service api-server
+ 6882  stern --context pod998 -n malware-scanning-service api-server 
+ 6883  stern --context pod998 -n malware-scanning-service api-server | grep Extracted
+ 6894  stern --context pod998 -n malware-scanning-service api-server | grep Extracted
+ 6903  stern --context pod26 -n opswat-malware-scanner api-server --since 1m
+ 6907  stern --context pod998 -n malware-scanning-service api-server | grep Extracted
+ 7021  stern --context pod998 -n malware-scanning-service api-server | grep Extracted
+ 7112  stern --context pod26 -n opswat-malware-scanner api-server --since 1m
+ 7113  stern --context pod998 -n opswat-malware-scanner api-server --since 1m
+ 7128  stern --context pod998 -n opswat-malware-scanner api-server --since 1m
+ 7210  stern --context pod998 -n classic api-server --since 1m
+ 7244  stern --context pod998 -n classic mysql-migrations --since 1m
+ 7245  stern --context pod998 -n attachments mysql-migrations --since 1m
+ 7246  stern --context pod998 -n attachments mysql-migrations
+ 7269  stern --context pod998 -n attachments mysql-migrations
+ 7734  stern --context pod998 -n classic api-server --since 1m
+ 7735  stern --context pod998 -n attachments api-server | grep  :429
+ 7736  stern --context pod998 -n attachments api-server | grep 0gQeuq94dNQ0O7pCCw7nkeQsV
+ 7737  stern --context pod998 -n attachments api-server
+ 7738  stern --context pod998 -n attachments api-server | grep 22399031
+ 7739  stern --context pod998 -n attachments api-server
+ 7806  stern --context pod998 -n attachments uploads-cleanup-job
+ 7819  stern --context pod998 -n attachments uploads-cleanup-job
+ 8808  stern --context pod998 -n attachments api-server --since 1h | grep error
+ 8809  stern --context pod998 -n attachments api-server --since 1h
+ 8810  stern --context pod998 -n attachments api-serve
+ 8811  stern --context pod998 -n attachments api-server
+ 8812  stern --context pod998 -n attachments api-server | grep -v ping
+ 8814  stern --context pod999 -n attachments api-server | grep -v ping
+ 8815  stern --context pod998 -n attachments api-server | grep -v ping
+ 8894  stern --context pod998 -n attachments istio-proxy
+ 8895  stern --context pod25 -n attachments istio-proxy
+ 8896  stern --context pod25 -n attachments api-server
+ 8897  stern --context pod25 -n attachments api-server | 503
+ 9002  stern --context pod998 -n attachments
+ 9003  stern --context pod998 -n attachments attachments-api-server-86df4d4646-j82h5
+ 9005  stern --context pod998 -n attachments-api-server-86df4d4646-9zns4 
+ 9006  stern --context pod998 -n attachments attachments-api-server-86df4d4646-9zns4 
+ 9052  stern --context pod998 -n attachments attachments-api-server-86689cb84c-7wvpj 
+ 9060  stern --context pod998 -n attachments attachments-api-server
+ 9061  stern --context pod998 -n attachments attachments-api-server | grep Shut
+ 9062  stern --context pod998 -n attachments attachments-api-server | grep Shutting
+ 9063  stern --context pod998 -n attachments attachments-api-server | grep Shutdown
+ 9064  stern --context pod998 -n attachments attachments-api-server | grep Waiting
+ 9069  stern --context pod998 -n attachments attachments-api-server
+ 9074  stern --context pod998 -n attachments attachments-api-server | grep 503
+ 9080  stern --context pod998 -n attachments attachments-api-server | grep " 503"
+ 9086  stern --context pod998 -n attachments attachments-api-server attachments-api-server-66c4cfb8cb-6bvfc 
+ 9089  stern --context pod998 -n attachments attachments-api-server attachments-api-server-66c4cfb8cb-6bvfc 
+ 9090  stern --context pod998 -n attachments attachments-api-server istio-proxy 
+ 9091  stern --context pod998 -n attachments istio-proxy 
+ 9093  stern --context pod998 -n attachments istio-proxy 
+ 9095  stern --context pod998 -n attachments 
+ 9096  stern --context pod998 -n attachments attachments-api-server
+ 9097  stern --context pod998 -n attachments attachments-api-server | grep Waiting
+ 9098  stern --context pod998 -n attachments attachments-api-server
+ 9119  stern --context pod998 -n attachments $podname
+ 9122  stern --context pod998 -n attachments $podname istio-proxy
+ 9172  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)\ndelete_pod() {\n  kubectl --context pod998 --as admin --as-group system:masters -n attachments delete pod $podname --grace-period 30\n}\n\npod_logs() {\n  stern --context pod998 -n attachments $podname\n}\n\nkube_events() {\n  kubectl --context pod998 --namespace attachments get events --field-selector involvedObject.name=$podname\n}\n
+ 9187  stern --context pod998 -n attachments $podname
+ 9203  stern --context pod998 -n attachments $podname
+ 9210  pod_logs() {\n  stern --context pod998 -n attachments $podname\n}
+10017  history | grep stern
