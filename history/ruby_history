@@ -1,0 +1,93 @@
+  249  AWS_PROFILE=zendesk-ecr-images docker pull 713408432298.dkr.ecr.us-west-2.amazonaws.com/base/zendesk/docker-images-base/ruby:3.1.4-focal-jemalloc
+ 1725  vim .ruby-version
+ 1730  brew upgrade ruby-build
+ 2032  vim .ruby-version
+ 2688  git commit -m 'upgrade docker base image to ruby:3.2.5-noble-jemalloc'
+ 2929  vim .ruby-version
+ 5495  ruby retry.rb
+ 5497  ruby retry.rb
+ 5499  ruby retry.rb
+ 5501  ruby retry.rb
+ 5506  ruby retry.rb
+ 5508  ruby retry.rb
+ 5511  ruby retry.rb
+ 5513  ruby retry.rb
+ 5527  ruby retry.rb
+ 7034  vim .ruby-version
+ 7037  brew upgrade ruby-build
+ 7039  vim .ruby-version
+ 7746  vim .ruby-version
+ 7752  brew upgrade ruby-build
+ 8187  vim .ruby-version
+ 8189  vim .ruby-version
+ 8195  vim .ruby-version
+ 8198  vim .ruby-version
+ 8202  vim .ruby-version
+ 8239  which ruby
+ 8240  ruby version
+ 8241  ruby --v
+ 8242  ruby --version
+ 8275  which ruby
+ 8277  ruby version
+ 8279  ruby -v
+ 8281  ruby -v
+ 8284  ruby -v
+ 8285  vim .ruby-version
+ 8286  ruby -v
+ 8287  vim .ruby-version
+ 8289  which ruby
+ 8290  ruby -v
+ 8294  ruby -v
+ 8297  ruby -v
+ 8299  ruby -v
+ 8301  ruby -v
+ 8307  ruby -v
+ 8310  ruby -v
+ 8408  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8415  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8417  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8419  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8422  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8424  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8429  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8436  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8453  ruby -I test -r test_helper ./test/backends/s3_backend_test.rb
+ 8454  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8456  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8457  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_valid_url
+ 8458  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8459  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8460  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8461  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8462  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8463  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8464  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_custom_path_prefix
+ 8467  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_custom_path_prefix
+ 8470  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_custom_path_prefix
+ 8472  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_custom_path_prefix
+ 8473  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8474  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_custom_path_prefix
+ 8475  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_create_correct_bucket_name
+ 8476  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8478  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda
+ 8479  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8480  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda_returns_nil
+ 8500  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda_returns_nil
+ 8502  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8505  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8507  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8537  ruby -I test -r test_helper ./test/backends/s3_test.rb
+ 8538  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8540  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8570  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8577  ruby -I test -r test_helper ./test/backends/s3_test.rb
+ 8578  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_aws_config_lambda_is_nil
+ 8579  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_should_set_mss_tags_when_enabled
+ 8580  ruby -I test -r test_helper ./test/backends/s3_test.rb
+ 8581  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_aws_config_lambda_returns_nil
+ 8582  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_classic_attachments_use_iam_role
+ 8583  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_when_not_use_iam_role
+ 8584  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_s3_config_when_classic_attachments_use_iam_role
+ 8585  ruby -I test -r test_helper ./test/backends/s3_test.rb -n test_connection_uses_when_not_use_iam_role
+ 8586  ruby -I test -r test_helper ./test/backends/s3_test.rb
+10057  history | grep ruby
