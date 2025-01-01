@@ -1,0 +1,56 @@
+   28  cd ../scooter/
+   66  scooter -v apply --project attachments --profile profiles/devs/attachments.jsonnet
+   67  cd scooter/results/generated/zendesk/spod-dev-sreeramaraju-manthena/
+  107  scooter apply --project attachments 
+  108  scooter apply --project devs/attachments 
+  109  scooter apply --project ./profiles/devs/attachments.jsonnet
+  548  scooter doctor
+ 1957  cd ../scooter
+ 2056  cd scooter
+ 2319  cd scooter/
+ 2508  cd scooter/
+ 2510  scooter launch -p devs/attachments.jsonnet
+ 2512  scooter launch -p devs/attachments.jsonnet
+ 2513  SCOOTER_PROFILE=devs/attachments && scooter apply --project attachments
+ 2526  SCOOTER_PROFILE=devs/attachments && scooter apply --project attachments
+ 2529  SCOOTER_PROFILE=devs/attachments && scooter apply --project attachments
+ 2530  scooter launch -p devs/attachments.jsonnet
+ 2549  scooter help
+ 2554  kubectl --context scooter-usw2 exec -it api-server:attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2555  kubectl --context scooter-usw2 -n attacahments exec -it api-server:attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2556  kubectl --context scooter-usw2 exec -it api-server:attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2557  kubectl --context scooter-usw2 -n api-server exec -it attachments-api-server-devspace-7db76b7f6f-x67sz -- bash
+ 2558  k9s --context scooter-usw2 -n attachments
+ 2612  cd Code/zendesk/scooter/
+ 2626  cd scooter/
+ 2630  scooter launch -p devs/attachments.jsonnet
+ 2656  scooter launch -p devs/attachments.jsonnet
+ 2663  cd Code/zendesk/scooter/
+ 2665  scooter launch -p devs/attachments.jsonnet
+ 2677  scooter apply --project some-project
+ 2678  scooter apply --project sunco
+ 2679  scooter launch -p devs/attachments.jsonnet
+ 2680  scooter apply --project sunco
+ 2727  scooter launch -p devs/messaging.jsonnet
+ 2729  scooter launch -p devs/attachments.jsonnet
+ 2733  scooter launch -p devs/messaging.jsonnet
+ 2734  scooter launch -p devs/attachments.jsonnet
+ 3935  scooter
+ 3936  which scooter
+ 5919  cd scooter/
+ 7045  cd scooter/
+ 7080  cd scooter/
+ 7099  cd scooter/
+ 7101  scooter launch -p devs/attachments.jsonnet
+ 7103  brew update scooter
+ 7104  brew upgrade scooter
+ 7105  scooter launch -p devs/attachments.jsonnet
+ 7141  scooter apply --project admin-center-framework-triggers
+ 7143  cd scooter/
+ 7144  scooter apply --project admin-center-framework-triggers
+ 7145  vim ~/.scooter/config.yaml
+ 7150  scooter apply --project admin-center-framework-triggers
+ 7153  scooter resume
+ 7166  kubectl config use-context scooter-usw2
+ 8197  cd scooter
+10089  history | grep scooter
