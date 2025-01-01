@@ -391,3 +391,5 @@
  9235  podname=$(kubectl --context pod998 --namespace attachments -o wide get pods | grep attachments-api-server | awk '{print $1}' | tail -n 1)
  9245  kubectl --context pod27 --namespace attachments get events --field-selector involvedObject.name=attachments-api-server-7b7fb86b7-w6t4b
 10018  history | grep kubectl
+10020  history | grep kubectl > kubectl_history
+10022  git commit -m 'add kubectl history'

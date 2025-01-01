@@ -1,0 +1,114 @@
+   14  docker ps | grep localstack
+   55  docker asdf
+   58  vim ~/.docker/
+   59  docker login 
+   65  git commit -m 'use standard redis image instead of pointing to docker.io'
+  176  vim dockmaster/lib/docker_commands.rb
+  248  AWS_PROFILE=zendesk-ecr-images docker pull 713408432298.dkr.ecr.us-west-2.amazonaws.com/zendesk/appconfig:v1.0.3
+  249  AWS_PROFILE=zendesk-ecr-images docker pull 713408432298.dkr.ecr.us-west-2.amazonaws.com/base/zendesk/docker-images-base/ruby:3.1.4-focal-jemalloc
+  252  AWS_PROFILE=zendesk-ecr-images docker run -it .
+  253  AWS_PROFILE=zendesk-ecr-images docker run .
+  254  docker run --name mycontainer1 localopswatimage
+  255  docker run --name mycontainer localopswatimage
+  256  docker rm mycontainer1
+  257  docker run -d --name mycontainer localopswatimage
+  258  docker exec -it mycontainer1 /bin/sh
+  259  docker run -d --name mycontainer someimage tail -f /dev/null
+  260  docker start mycontainer
+  261  docker logs mycontainer
+  264  docker run -it ubuntu:20.04
+  265  docker run -it ubuntu:24.04
+  302  docker run --platform linux/amd64 -it ubuntu bash
+  303  docker run -it linux/amd64 ubuntu:24.04
+  304  docker run -it linux/amd64 ubuntu:24.04 bash
+  305  docker run -it --platform linux/amd64 ubuntu:24.04 bash
+  306  docker buildx inspect mybuilder --bootstrap
+  308  AWS_PROFILE=zendesk-ecr-images docker build .
+  309  docker run \\n  --name opswat-malware-scanner \\n  --dns $(docker inspect dnsmasq | jq -r '.[0].NetworkSettings.Networks.docker.IPAddress') \\n  --hostname opswat-malware-scanner \\n  --network-alias opswat-malware-scanner \\n  --network docker \\n  -ti --entrypoint /bin/bash \\n  --rm \\n  --mount type=bind,src=$(pwd),dst=/app \\n  --mount type=bind,src=$(pwd)/secrets,dst=/secrets \\n  --env ZENDESK_POD_ID=1 \\n  --env POD_NAME=development_pod \\n  --env ENVIRONMENT=development \\n  --env STATSD_PORT=8125 \\n  --env STATSD_HOST=host.docker.internal -p 8008:8008 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  310  docker run \\n  -- platform linux/amd64 \--name opswat-malware-scanner \\n  --dns $(docker inspect dnsmasq | jq -r '.[0].NetworkSettings.Networks.docker.IPAddress') \\n  --hostname opswat-malware-scanner \\n  --network-alias opswat-malware-scanner \\n  --network docker \\n  -ti --entrypoint /bin/bash \\n  --rm \\n  --mount type=bind,src=$(pwd),dst=/app \\n  --mount type=bind,src=$(pwd)/secrets,dst=/secrets \\n  --env ZENDESK_POD_ID=1 \\n  --env POD_NAME=development_pod \\n  --env ENVIRONMENT=development \\n  --env STATSD_PORT=8125 \\n  --env STATSD_HOST=host.docker.internal -p 8008:8008 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  311  docker run \\n  --name opswat-malware-scanner \\n  —platform linux/amd64 \\n  --dns $(docker inspect dnsmasq | jq -r '.[0].NetworkSettings.Networks.docker.IPAddress') \\n  --hostname opswat-malware-scanner \\n  --network-alias opswat-malware-scanner \\n  --network docker \\n  -ti --entrypoint /bin/bash \\n  --rm \\n  --mount type=bind,src=$(pwd),dst=/app \\n  --mount type=bind,src=$(pwd)/secrets,dst=/secrets \\n  --env ZENDESK_POD_ID=1 \\n  --env POD_NAME=development_pod \\n  --env ENVIRONMENT=development \\n  --env STATSD_PORT=8125 \\n  --env STATSD_HOST=host.docker.internal -p 8008:8008 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  319  docker stop e308e8426a2d8d104059a3c815b48e5ed9aa27112dfa80ffa49dc338cb2f1a79
+  320  docker rm e308e8426a2d8d104059a3c815b48e5ed9aa27112dfa80ffa49dc338cb2f1a79
+  327  docker ps | grep ops-wat
+  376  AWS_PROFILE=zendesk-ecr-images docker pull 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  377  AWS_PROFILE=zendesk-ecr-images docker --platform=linux/amd64 pull 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  378  AWS_PROFILE=zendesk-ecr-images docker --platform linux/amd64 pull 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  379  docker build -t 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest .
+  380  AWS_PROFILE=zendesk-ecr-images docker pull --platform linux/amd64 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  381  git checkout -b sreeramaraju/docker_m1mac
+  385  docker buildx inspect --bootstrap
+  393  git push origin +sreeramaraju/docker_m1mac
+  581  docker unpause $(docker ps -q)
+  582  docker pause $(docker ps -q)
+  588  docker run \\n  --name opswat-malware-scanner \\n  --platform linux/amd64 \\n  --dns $(docker inspect dnsmasq | jq -r '.[0].NetworkSettings.Networks.docker.IPAddress') \\n  --hostname opswat-malware-scanner \\n  --network-alias opswat-malware-scanner \\n  --network docker \\n  -ti --entrypoint /bin/bash \\n  --rm \\n  --mount type=bind,src=$(pwd),dst=/app \\n  --mount type=bind,src=$(pwd)/secrets,dst=/secrets \\n  --env ZENDESK_POD_ID=1 \\n  --env POD_NAME=development_pod \\n  --env ENVIRONMENT=development \\n  --env STATSD_PORT=8125 \\n  --env STATSD_HOST=host.docker.internal -p 8008:8008 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest
+  589  docker build --platform linux/amd64 -t 713408432298.dkr.ecr.us-west-2.amazonaws.com/prod/zendesk/opswat-malware-scanner:latest .
+  590  git checkout -b sreeramaraju/testdockerbuild
+  592  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 .
+  593  AWS_PROFILE=zendesk-ecr-images docker build -t localopswatimage .
+  594  docker rm b76e01fb27816c14216e72e87d6d1519777ab0d0c9e8c222de487c3c27289424
+  595  docker stop b76e01fb27816c14216e72e87d6d1519777ab0d0c9e8c222de487c3c27289424
+  596  docker rm 2745def020e75e5e1989e469b6458b21a89f636de59892d70f373a9066fc600c
+  597  docker rm -f 2745def020e75e5e1989e469b6458b21a89f636de59892d70f373a9066fc600c
+  598  docker run -d --name mycontainer localopswatimage tail -f /dev/null
+  599  docker rm -f 5e1cb88548bfa96c631e1f7641040427aa425ad5eefed1932ef585e9dc3d22fe
+  600  docker run -d --platform linux/amd64 --name mycontainer localopswatimage tail -f /dev/null
+  601  docker exec -it mycontainer /bin/sh
+  602  docker stop mycontainer
+  603  docker rm mycontainer
+  653  docker pull sonarqube:8.9.1-community
+  654  docker pull --platform linux/amd64 sonarqube:8.9.1-community
+ 1296  cat ~/.docker/config.json
+ 1297  mv ~/.docker/config.json ~/.docker/config.json.bkp
+ 1299  cat ~/.docker/config.json
+ 1301  cat ~/.docker/config.json
+ 1303  docker login
+ 1962  docker login
+ 1985  vim ~/.docker/config.json
+ 1986  docker login
+ 2013  docker
+ 2615  ag localstack.docker
+ 2684  git checkout -b sreeramarju/upgrade_docker_build_image
+ 2688  git commit -m 'upgrade docker base image to ruby:3.2.5-noble-jemalloc'
+ 2695  go mod why github.com/docker/docker
+ 2696  go mod why docker
+ 2697  go mod why docker@25.0.1
+ 2701  go mod why github.com/docker/docker
+ 2705  ag docker.docker
+ 3741  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 3743  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 4220  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 4221  docker build .
+ 4224  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 4226  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 4765  docker rm efdb08780caac489b52d5b6445fd21c2797b1f51bdce96812fd9fd064504f168
+ 4812  ping docker
+ 4815  ping classic.docker
+ 4816  ping mysql.docker
+ 4829  ping classic.docker
+ 5035  ag "docker build --platform linux/amd64"
+ 5044  ag docker
+ 5047  ag docker
+ 5048  ag "docker build --platform"
+ 5050  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5052  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5073  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5076  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5081  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5086  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5087  docker rm localopswatimage
+ 5201  ps -ef | grep docker
+ 5202  ps -ef | grep docker | kill -9
+ 5203  pgrep docker
+ 5204  pkill docker
+ 5205  sudo pkill docker
+ 5395  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5397  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 5431  AWS_PROFILE=zendesk-ecr-images docker build --platform linux/amd64 -t localopswatimage .
+ 7320  docker login
+ 7610  docker login
+ 7944  pbpaste > dockercommands.jpeg
+ 7947  open dockercommands.jpeg
+ 7948  cat dockercommands.jpeg
+ 7949  rm dockercommands.jpeg
+ 7950  cp ~/Downloads/dockercommands.jpeg .
+10037  history | grep docker
